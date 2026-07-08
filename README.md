@@ -68,8 +68,6 @@ The Streamlit dashboard includes three major sections:
   * Churn probability
   * Risk progress bar
 
----
-
 ### 2. Explore Data
 
 Provides exploratory analysis including:
@@ -184,6 +182,16 @@ The application loads a serialized model bundle containing:
 This ensures that prediction-time preprocessing exactly matches the training pipeline.
 
 ---
+### Model Comparison
+| Model                                                  | Test Accuracy | Precision |    Recall |  F1 Score |   ROC-AUC |
+| ------------------------------------------------------ | ------------: | --------: | --------: | --------: | --------: |
+| **Logistic Regression**                                |     **0.810** | **0.633** |     0.665 | **0.648** | **0.860** |
+| XGBoost                                                |         0.759 |     0.530 |     0.786 |     0.633 |     0.830 |
+| Random Forest                                          |         0.719 |     0.483 | **0.858** |     0.618 |     0.823 |
+| Decision Tree                                          |         0.731 |     0.493 |     0.547 |     0.518 |     0.672 |
+
+---
+Logistic Regression emerged as the best-performing model after hyperparameter tuning, achieving a ROC-AUC of 0.860 and an F1 Score of 0.648.
 
 # How to Run
 
