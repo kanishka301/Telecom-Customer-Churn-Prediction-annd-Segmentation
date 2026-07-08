@@ -273,15 +273,4 @@ This generates:
 
 ---
 
-# Future Improvements
-
-* Compare multiple machine learning models (Random Forest, XGBoost, LightGBM, CatBoost).
-* Hyperparameter tuning.
-* SHAP-based feature importance.
-* Retention recommendation engine.
-* Cloud deployment.
-* Real-time prediction API.
-* Automated retraining pipeline.
-
----
 
