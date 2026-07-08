@@ -5,7 +5,6 @@
 This project predicts the likelihood of customer churn in a telecom company using machine learning and provides an interactive Streamlit dashboard for customer-level predictions, exploratory data analysis, and customer segmentation.
 
 The project includes:
-
 * A complete data preprocessing and feature engineering pipeline.
 * A machine learning model for customer churn prediction.
 * Customer segmentation based on churn probability and customer characteristics.
