@@ -190,7 +190,7 @@ This ensures that prediction-time preprocessing exactly matches the training pip
 | Decision Tree                                          |         0.731 |     0.493 |     0.547 |     0.518 |     0.672 |
 
 ---
-Logistic Regression emerged as the best-performing model after hyperparameter tuning, achieving a ROC-AUC of 0.860 and an F1 Score of 0.648.
+Logistic Regression emerged as the best-performing model, achieving a ROC-AUC of 0.860 and an F1 Score of 0.648.
 
 # How to Run
 
