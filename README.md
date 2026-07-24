@@ -253,5 +253,5 @@ This generates:
 ---
 ## Live Demo 
 
-**Live Dashboard:** 
+**Live Dashboard:** http://13.48.123.6:8501/
 
