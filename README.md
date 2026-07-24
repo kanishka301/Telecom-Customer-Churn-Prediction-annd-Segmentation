@@ -67,21 +67,9 @@ The Streamlit dashboard includes three major sections:
   * Churn probability
   * Risk progress bar
 
-### 2. Explore Data
 
-Provides exploratory analysis including:
 
-* Total customers
-* Churn rate
-* Customer distribution
-* Tenure distribution
-* Churn by contract type
-* Interactive visualizations
-* Raw dataset viewer
-
----
-
-### 3. Customer Segments
+### 2. Customer Segments
 
 Displays customer segmentation results including:
 
@@ -114,7 +102,8 @@ Responsible for:
 
 * Model training
 * Feature scaling
-* Label encoding
+* One hot encoding
+* SMOTE
 * Model evaluation
 * Saving the trained model bundle
 
@@ -182,15 +171,17 @@ This ensures that prediction-time preprocessing exactly matches the training pip
 
 ---
 ### Model Comparison
-| Model                                                  | Test Accuracy | Precision |    Recall |  F1 Score |   ROC-AUC |
-| ------------------------------------------------------ | ------------: | --------: | --------: | --------: | --------: |
-| **Logistic Regression**                                |     **0.810** | **0.633** |     0.665 | **0.648** | **0.860** |
-| XGBoost                                                |         0.759 |     0.530 |     0.786 |     0.633 |     0.830 |
-| Random Forest                                          |         0.719 |     0.483 | **0.858** |     0.618 |     0.823 |
-| Decision Tree                                          |         0.731 |     0.493 |     0.547 |     0.518 |     0.672 |
+
+| Model                              | Test Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|------------------------------------|--------------:|----------:|--------:|---------:|---------:|
+| Logistic Regression (Baseline)     | **0.7445**    | 0.5121    | 0.7914  | 0.6218   | **0.8404** |
+| Random Forest (Tuned)              | 0.7587        | 0.5318    | 0.7594  | 0.6256   | 0.8403 |
+| XGBoost                            | **0.7608**    | **0.5369**| 0.7193  | 0.6149   | 0.8241 |
+| Random Forest                      | 0.7431        | 0.5100    | **0.8182** | **0.6283** | 0.8258 |
+| Decision Tree                      | 0.7040        | 0.4510    | 0.5294  | 0.4871   | 0.6478 |
 
 ---
-Logistic Regression emerged as the best-performing model, achieving a ROC-AUC of 0.860 and an F1 Score of 0.648.
+Logistic Regression emerged as the best-performing model, achieving a ROC-AUC of 0.8404 and an F1 Score of 0.6218.
 
 # How to Run
 
@@ -227,17 +218,6 @@ This generates:
 * Churn probability
 * Risk indicator
 
----
-
-### Explore Data
-
-* Total customers
-* Churned customers
-* Overall churn rate
-* Churn distribution
-* Tenure analysis
-* Contract type analysis
-* Raw dataset explorer
 
 ---
 
@@ -273,5 +253,5 @@ This generates:
 ---
 ## Live Demo 
 
-**Live Dashboard:** http://13.50.239.97:8501/
+**Live Dashboard:** 
 
